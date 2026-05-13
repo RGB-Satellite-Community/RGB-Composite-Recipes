@@ -1,14 +1,14 @@
-name: Deploy MkDocs
+name: Release version
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 permissions:
   contents: write
 
 jobs:
-  deploy:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,5 +29,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Deploy main as latest
-        run: mike deploy --push --update-aliases main latest
+      - name: Deploy tagged version
+        run: |
+          TAG=${GITHUB_REF#refs/tags/}
+          mike deploy --push "$TAG"

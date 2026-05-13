@@ -28,6 +28,12 @@ nav:
     - Day Land Cloud RGB: day-land-cloud.md
     - Day HRV Clouds RGB: day-hrv-clouds.md
 
+extra:
+  version:
+    provider: mike
+  status:
+    updated: Recently updated
+
 markdown_extensions:
   - tables
   - attr_list
