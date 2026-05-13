@@ -37,6 +37,7 @@ Alternative name: *Cloud Type RGB*
 | Green       | VIS0.64          | 0         | 80        | %    | 0.75  |
 | Blue        | NIR1.6           | 0         | 80        | %    | 1     |
 
+!!! info inline end "Agreed upon at the online workshop 2026-05-13"
 Proposed (M. Setvák, O. Nedělčev, 2026)
 | Colour beam | Channel          | Range min | Range max | Unit | Gamma |
 |-------------|------------------|-----------|-----------|------|-------|
