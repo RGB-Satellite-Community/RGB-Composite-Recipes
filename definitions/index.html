@@ -1,0 +1,1456 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../airmass/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Definitions & Naming Conventions - RGB Composite Recipes for Meteorological Imagers</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#definitions-naming-conventions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="RGB Composite Recipes for Meteorological Imagers" class="md-header__button md-logo" aria-label="RGB Composite Recipes for Meteorological Imagers" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RGB Composite Recipes for Meteorological Imagers
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Definitions & Naming Conventions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="RGB Composite Recipes for Meteorological Imagers" class="md-nav__button md-logo" aria-label="RGB Composite Recipes for Meteorological Imagers" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    RGB Composite Recipes for Meteorological Imagers
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions & Naming Conventions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definitions & Naming Conventions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-and-preprocessing-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input and preprocessing guidance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-enhancement-range-and-gamma-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Enhancement: Range and Gamma Correction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-conventions2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming Conventions[^2]
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic RGBs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basic RGBs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../airmass/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Airmass RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24h-microphysics-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    24-hour Microphysics Cloud RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../night-microphysics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Night Microphysics RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud-phase/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Cloud Phase RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-microphysics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Microphysics RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cloud-type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Cloud Type RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Special Applications RGBs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Special Applications RGBs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../severe-convection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Severe Storms RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overshooting-tops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overshooting Tops RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    24-hour Microphysics Dust RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-fire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Fire RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-snowmelt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Snowmelt RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RGBs Under Development
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    RGBs Under Development
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-moisture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Moisture RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fog-dynamics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    24h Fog Dynamics RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blowing-snow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Blowing Snow RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-sea-spray/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Sea Spray RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other-visualisations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other Visualisations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy RGB Composites
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legacy RGB Composites
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-land-cloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day Land Cloud RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../day-hrv-clouds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Day HRV Clouds RGB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definitions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Definitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-and-preprocessing-guidance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input and preprocessing guidance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-enhancement-range-and-gamma-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Enhancement: Range and Gamma Correction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#naming-conventions2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Naming Conventions[^2]
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="definitions-naming-conventions">Definitions &amp; Naming Conventions</h1>
+<h2 id="definitions">Definitions</h2>
+<p>This document explains how to create WMO-recommended standard RGB composites using data from the new-generation imagers aboard geostationary meteorological satellites ("GEO ring") operated by the United States, Europe, China, and Japan that are most commonly used in operational weather forecasting.</p>
+<p>An RGB composite refers to a visual product created by combining spectral channel radiances or derived quantities such as reflectance (%) or brightness temperature (Kelvin degrees), measured by a passive multi-spectral satellite sensor, and mapping them into the Red-Green-Blue (RGB) colour space. In some cases, gamma correction is applied to enhance the visual representation.</p>
+<p>These standard recipes are based on community-developed guidance established over the past two decades (see Workshop reports 2007, 2012, 2017, 2022, and 2025).</p>
+<p>Note: While the terms "channel" and "band" are often used interchangeably, this document uses the term "channel" throughout for consistency.</p>
+<p>The table below outlines the parameters required to define an RGB composite, commonly referred to as an RGB "recipe". General guidance on how to create or adapt an RGB scheme is available through resource such as <em>How to create or adapt an RGB scheme</em> (<a href="https://resources.eumetrain.org/data/7/737/index.htm">EUMETrain</a>).</p>
+<table>
+<thead>
+<tr>
+<th>Colour beam</th>
+<th>Channel (or combination)</th>
+<th>Range min</th>
+<th>Range max</th>
+<th>Unit</th>
+<th>Gamma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td>...</td>
+<td>Red_1</td>
+<td>Red_2</td>
+<td>K or %</td>
+<td>Gamma1</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>...</td>
+<td>Green_1</td>
+<td>Green_2</td>
+<td>K or %</td>
+<td>Gamma2</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>...</td>
+<td>Blue_1</td>
+<td>Blue_2</td>
+<td>K or %</td>
+<td>Gamma3</td>
+</tr>
+</tbody>
+</table>
+<p>Template for parameters used in RGB recipes.</p>
+<p>The second column indicates the channels or channel combinations that should be visualized in the red, green and blue colour beams in the composite.</p>
+<h3 id="input-and-preprocessing-guidance">Input and preprocessing guidance</h3>
+<ul>
+<li>
+<p>Input data should be the default calibrated radiances provided in near-real time for each channel by the satellite operator. This should be converted into reflectance (%) or brightness temperature (K) using a formula supplied by the satellite operator. If digital counts are provided instead, they must first be converted into radiances using an operator-specific calibration formula.</p>
+</li>
+<li>
+<p>For solar channels, calibration should include a solar zenith angle (SZA) correction, using the method proposed by <em>Li and Shibata</em> (2006)[^1]. This method results in smoother imagery and better preserves information compared to the simple 1/cos (SZA) correction at the terminator.</p>
+</li>
+<li>A Rayleigh scattering correction can be applied for channels in shortwave range (approximately 400-600 nm) that are sensitive to atmospheric scattering. This correction is recommended for generating the True Colour RGB, while optional for other RGBs. In particular, for the VIS0.6 channel, since the impact is small, and the correction is adding extra computational time.</li>
+<li>No limb cooling correction should be applied.</li>
+<li>No parallax correction should be applied.</li>
+</ul>
+<h3 id="image-enhancement-range-and-gamma-correction">Image Enhancement: Range and Gamma Correction</h3>
+<p>The RGB images should be enhanced using the defined range and gamma values—as specified in columns 3, 4, 5, and 6 of the table above.</p>
+<p>The input values (reflectance or brightness temperature) should be <em>linearly stretched</em> within the specified range (columns 3 and 4, e.g., <em>Red_1</em> and <em>Red_2</em>) to span the full display brightness scale (0-255, BYTE). The units for the range are indicated in column 5 either Kelvin (K) for brightness temperature or percent (%) for reflectance.</p>
+<ul>
+<li>In most cases, the value in column 3 (e.g., <em>Red_1</em>) is lower than the value in column 4 (<em>Red_2</em>).</li>
+<li>In some RGB recipes, the range is inverted, meaning the lower bound is numerically greater than the upper bound.</li>
+</ul>
+<p>In addition to linear stretching, <em>non-linear enhancement</em> may also be applied through gamma correction (see sixth column in the table).</p>
+<ul>
+<li>If Gamma &gt; 1, the image becomes brighter, with enhanced contrast in darker tones.</li>
+<li>If Gamma &lt; 1, the image becomes darker, with enhanced contrast in brighter tones.</li>
+<li>If Gamma = 1, no gamma correction is applied (i.e., only linear stretching).</li>
+</ul>
+<p>Gamma Correction Equation:</p>
+<div class="arithmatex">\[\mathbf{BYTE = 255*\ }\left( \frac{\mathbf{X - RANGE\_1}}{\mathbf{RANGE\_2 - RANGE\_1}} \right)^{\frac{\mathbf{1}}{\mathbf{Gamma}}}\]</div>
+<p>where:</p>
+<ul>
+<li>X -- input calibrated value (reflectivity or brightness temperature)</li>
+<li>RANGE_1 and RANGE_2 -- minimum and maximum values for stretching (e.g., <em>Red_1</em> and <em>Red_2</em>)</li>
+<li>Gamma -- gamma correction parameter</li>
+<li>BYTE -- output display value (ranging from 0 to 255)</li>
+</ul>
+<p>The figure below illustrates the effect of the gamma correction.</p>
+<p><img alt="Effect of the gamma correction." src="../assets/media/image1.png" /></p>
+<p>It is recommended practice to apply gamma correction using the parameter as defined in the equation above (see <em>WMO Tokyo workshop 2017 report</em> and <a href="https://en.wikipedia.org/wiki/Gamma_correction">https://en.wikipedia.org/wiki/Gamma_correction</a>). Please note that some users and software tools may define the exponent differently using Gamma where this guidance uses 1/Gamma, effectively naming Gamma as the reciprocal of the value recommended here.</p>
+<p>Solar Zenith Angle (SZA): angle between the sun and the vertical direction.</p>
+<p>The Flexible Combined Imager (FCI) on the Meteosat Third Generation (MTG) satellites generates data for some channels at two spatial resolutions simultaneously, for example IR10.5 µm at both 1 km (high resolution) and 2 km (nominal resolution).</p>
+<p>When combining multiple channel data with other channels within the same colour beam, to avoid visual artefacts, it is recommended to use data at the same spatial resolution. For instance, when constructing the red component of Night Microphysics RGB, use IR10.5 2 km in combination with IR12.3 2 km data. Avoid mixing different-resolution inputs such as IR12.3 at 2 km (resampled to 1 km) with IR10.5 at 1 km—this can result in artefacts and degraded image quality.</p>
+<p>However, one can use different spatial resolutions in different colour beams. For example, in the Night Microphysics RGB, the red colour beam can be based on IR12.3 -- IR10.5 at 2 km resolution, resampled to 1 km, while the green and blue beams may use IR10.5 -- IR3.8 and IR10.5 at 1 km resolution, respectively—without introducing artefacts.</p>
+<p>This document presents WMO-recommended standards. Users should note that RGB recipes are subject to regular review and revision based on operational feedback, testing, and research and development. This is particularly relevant for RGBs based on new-generation sensors—such as the FCI on MTG satellites, operational as of 2025.</p>
+<p>Example recipe for the Meteosat SEVIRI 24h Microphysics Cloud RGB:</p>
+<table>
+<thead>
+<tr>
+<th>Colour beam</th>
+<th>Channel (difference)</th>
+<th>Range min</th>
+<th>Range max</th>
+<th>Unit</th>
+<th>Gamma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red</td>
+<td>IR12.0 -- IR10.8</td>
+<td>-4</td>
+<td>+2</td>
+<td>K</td>
+<td>1.0</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>IR10.8 -- IR8.7</td>
+<td>0</td>
+<td>+6</td>
+<td>K</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>IR10.8</td>
+<td>248</td>
+<td>303</td>
+<td>K</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="naming-conventions2">Naming Conventions[^2]</h2>
+<table>
+<thead>
+<tr>
+<th>Full name</th>
+<th>Alternative / short name</th>
+<th>Spanish translation</th>
+<th>German translation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Basic RGBs</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24-hour Microphysics Cloud RGB</td>
+<td>24-h Microphysics RGB</td>
+<td>RGB Microfisica de nubes 24h</td>
+<td>24h Mikrophysik RGB</td>
+</tr>
+<tr>
+<td>Night Microphysics RGB</td>
+<td>Fog RGB, Night Fog RGB, Fog/Low Cloud RGB, Fog/Low Stratus RGB</td>
+<td>RGB Niebla</td>
+<td>Nacht Mikrophysik-RGB</td>
+</tr>
+<tr>
+<td>Day Cloud Phase RGB</td>
+<td>Cloud Phase RGB</td>
+<td>RGB Fase de nube</td>
+<td>Wolkenphase RGB</td>
+</tr>
+<tr>
+<td>Day Cloud Type RGB</td>
+<td>Cloud Type RGB</td>
+<td>RGB Tipo de nube</td>
+<td>Wolkentyp-RGB</td>
+</tr>
+<tr>
+<td><strong>Special Applications RGBs</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24-hour Microphysics Dust RGB</td>
+<td>Dust RGB</td>
+<td>RGB Polvo</td>
+<td>Staub RGB</td>
+</tr>
+<tr>
+<td>24-hour Microphysics CVD Dust RGB</td>
+<td>CVD Dust RGB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>24-hour Microphysics Ash RGB</td>
+<td>Ash RGB</td>
+<td>RGB Cenizas volcanicas</td>
+<td>Asche RGB</td>
+</tr>
+<tr>
+<td>Day Severe Storms RGB</td>
+<td>Convection RGB, Severe Storms RGB, Severe Convection RGB</td>
+<td>RGB Tormentas Severas</td>
+<td>Schwere Konvektion-RGB</td>
+</tr>
+<tr>
+<td>Volcanic Emissions (SO2 and Ash) RGB</td>
+<td>SO2 and Ash RGB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Day Fire RGB</td>
+<td>Day Land Cloud Fire RGB, Natural Fire Colour RGB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Day Snowmelt RGB</td>
+<td>Snowmelt RGB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Legacy RGBs</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Day Land Cloud RGB</td>
+<td>Natural Colour RGB</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Day Snow-Fog RGB</td>
+<td>Snow RGB</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>[^1]: Li, J. and Shibata, K. (2006). On the Effective Solar Pathlength. <em>Journal of the Atmospheric Sciences</em> 63(4) pp. 1365-1373.
+[^2]: No proposed translation into French, Arabic since Météo-France and VLab Oman Centre of Excellence recommend using the English terminology.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
