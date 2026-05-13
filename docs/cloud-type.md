@@ -37,6 +37,13 @@ Alternative name: *Cloud Type RGB*
 | Green       | VIS0.64          | 0         | 80        | %    | 0.75  |
 | Blue        | NIR1.6           | 0         | 80        | %    | 1     |
 
+Proposed (M. Setvák, O. Nedělčev, 2026)
+| Colour beam | Channel          | Range min | Range max | Unit | Gamma |
+|-------------|------------------|-----------|-----------|------|-------|
+| Red         | NIR1.37          | 0.4       | 70        | %    | 4.0   |
+| Green       | VIS0.64          | 2.5       | 100       | %    | 1.0   |
+| Blue        | NIR1.6           | 0         | 85        | %    | 0.85  |
+
 ### GOES ABI Day Cloud Type RGB
 
 | Colour beam | Channel          | Range min | Range max | Unit | Gamma |
