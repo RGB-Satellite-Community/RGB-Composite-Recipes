@@ -1,32 +1,43 @@
 site_name: RGB Composite Recipes for Meteorological Imagers
 theme:
   name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 nav:
   - Home: index.md
   - Definitions & Naming Conventions: definitions.md
   - Basic RGBs:
-    - Airmass RGB: airmass.md
-    - 24-hour Microphysics Cloud RGB: 24h-microphysics-cloud.md
-    - Night Microphysics RGB: night-microphysics.md
-    - Day Cloud Phase RGB: cloud-phase.md
-    - Day Microphysics RGB: day-microphysics.md
-    - Day Cloud Type RGB: cloud-type.md
+      - Airmass RGB: airmass.md
+      - 24-hour Microphysics Cloud RGB: 24h-microphysics-cloud.md
+      - Night Microphysics RGB: night-microphysics.md
+      - Day Cloud Phase RGB: cloud-phase.md
+      - Day Microphysics RGB: day-microphysics.md
+      - Day Cloud Type RGB: cloud-type.md
   - Special Applications RGBs:
-    - Day Severe Storms RGB: severe-convection.md
-    - Overshooting Tops RGB: overshooting-tops.md
-    - 24-hour Microphysics Dust RGB: dust.md
-    - Day Fire RGB: day-fire.md
-    - Day Snowmelt RGB: day-snowmelt.md
+      - Day Severe Storms RGB: severe-convection.md
+      - Overshooting Tops RGB: overshooting-tops.md
+      - 24-hour Microphysics Dust RGB: dust.md
+      - Day Fire RGB: day-fire.md
+      - Day Snowmelt RGB: day-snowmelt.md
   - RGBs Under Development:
-    - Day Moisture RGB: day-moisture.md
-    - 24h Fog Dynamics RGB: fog-dynamics.md
-    - Day Blowing Snow RGB: blowing-snow.md
-    - Day Sea Spray RGB: day-sea-spray.md
+      - Day Moisture RGB: day-moisture.md
+      - 24h Fog Dynamics RGB: fog-dynamics.md
+      - Day Blowing Snow RGB: blowing-snow.md
+      - Day Sea Spray RGB: day-sea-spray.md
   - Other Visualisations: other-visualisations.md
   - Legacy RGB Composites:
-    - Day Land Cloud RGB: day-land-cloud.md
-    - Day HRV Clouds RGB: day-hrv-clouds.md
+      - Day Land Cloud RGB: day-land-cloud.md
+      - Day HRV Clouds RGB: day-hrv-clouds.md
 
 extra:
   version:
