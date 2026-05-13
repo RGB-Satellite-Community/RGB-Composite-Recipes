@@ -38,7 +38,9 @@ Alternative name: *Cloud Type RGB*
 | Blue        | NIR1.6           | 0         | 80        | %    | 1     |
 
 !!! info inline end "Agreed upon at the online workshop 2026-05-13"
-   Proposed (M. Setvák, O. Nedělčev, 2026)
+    Proposed (M. Setvák, O. Nedělčev, 2026)
+
+#### Proposed variant
 
 | Colour beam | Channel          | Range min | Range max | Unit | Gamma |
 |-------------|------------------|-----------|-----------|------|-------|
