@@ -31,8 +31,6 @@ nav:
 extra:
   version:
     provider: mike
-  status:
-    updated: Recently updated
 
 markdown_extensions:
   - tables

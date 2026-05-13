@@ -1,5 +1,5 @@
 ---
-status: updated
+status: new
 ---
 
 # 24-hour Microphysics Dust RGB

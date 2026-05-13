@@ -1,5 +1,5 @@
 ---
-status: updated
+status: new
 ---
 
 # Day Cloud Phase RGB
