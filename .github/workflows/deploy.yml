@@ -30,4 +30,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Deploy main as latest
-        run: mike deploy --push --update-aliases main latest
+        run: mike deploy --push --update-aliases --title "latest" main latest
