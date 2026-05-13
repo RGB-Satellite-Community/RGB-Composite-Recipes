@@ -1,3 +1,7 @@
+---
+status: updated
+---
+
 # Day Severe Storms RGB
 
 Alternative names: *Severe Storms RGB, Convection RGB, Severe Convection RGB*

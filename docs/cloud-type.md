@@ -1,3 +1,7 @@
+---
+status: updated
+---
+
 # Day Cloud Type RGB
 
 Alternative name: *Cloud Type RGB*

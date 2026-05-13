@@ -1,3 +1,7 @@
+---
+status: updated
+---
+
 # 24-hour Microphysics Dust RGB
 
 Alternative name: *Dust RGB*

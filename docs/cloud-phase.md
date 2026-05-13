@@ -1,3 +1,7 @@
+---
+status: updated
+---
+
 # Day Cloud Phase RGB
 
 Alternative name: *Cloud Phase RGB*
