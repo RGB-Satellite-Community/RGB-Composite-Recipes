@@ -31,14 +31,6 @@ Alternative name: *Cloud Type RGB*
 
 ### MTG FCI Day Cloud Type RGB
 
-| Colour beam | Channel          | Range min | Range max | Unit | Gamma |
-|-------------|------------------|-----------|-----------|------|-------|
-| Red         | NIR1.37          | 0         | 10        | %    | 1.5   |
-| Green       | VIS0.64          | 0         | 80        | %    | 0.75  |
-| Blue        | NIR1.6           | 0         | 80        | %    | 1     |
-
-#### Proposed variant
-
 !!! info "Agreed upon at the online workshop 2026-05-13"
     Proposed (M. Setvák, O. Nedělčev, 2026)
 
