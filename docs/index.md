@@ -14,7 +14,7 @@ Welcome! This site documents community-maintained RGB composite recipes for mete
 |--------|-------------|
 | [Airmass RGB](airmass.md) | 24-hour monitoring of atmospheric dynamics |
 | [24-hour Microphysics Cloud RGB](24h-microphysics-cloud.md) | 24-hour cloud analysis, low cloud detection |
-| [Night Microphysics RGB](night-microphysics.md) | Fog and low cloud detection (nighttime) |
+| [Night Microphysics RGB](night-microphysics.md) ✨ | Fog and low cloud detection (nighttime) |
 | [Day Cloud Phase RGB](cloud-phase.md) ✨ | Cloud phase detection, cloud top microphysics |
 | [Day Microphysics RGB](day-microphysics.md) | Cloud analyses, particle size estimation |
 | [Day Cloud Type RGB](cloud-type.md) ✨ | Cloud type identification, cirrus detection |

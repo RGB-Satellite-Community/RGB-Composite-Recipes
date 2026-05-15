@@ -32,12 +32,14 @@ Alternative names: *Fog RGB*, *Fog/Low Clouds RGB*
 
 ### MTG FCI Night Microphysics RGB
 !!! info "Agreed upon at the online workshop 2026-05-13"
-    Proposed (M.A. Martinez, 2026)
+    Proposed (M.A. Martinez, 2025, M. Putsay, 2026)
+
+Tuned for mid-latitudes.
 
 | Colour beam | Channel (difference) | Range min | Range max | Unit | Gamma |
 |-------------|----------------------|-----------|-----------|------|-------|
 | Red         | IR12.3-10.5          | -7.1      | +2.4      | K    | 1.0   |
-| Green       | IR10.5 -- IR3.8      | -2.9      | +5        | K    | 1.0   |
+| Green       | IR10.5 -- IR3.8      | -2.9      | +6        | K    | 1.0   |
 | Blue        | IR10.5               | 242.2     | 293.1     | K    | 1.0   |
 
 ### GOES ABI Night Microphysics RGB
