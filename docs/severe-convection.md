@@ -46,11 +46,14 @@ Alternative names: *Severe Storms RGB, Convection RGB, Severe Convection RGB*
 
 ### MSG SEVIRI Day Severe Storms RGB
 
+!!! info "Agreed upon at the online workshop 2026-05-13"
+    Proposed (M. Putsay, 2026)
+
 | Colour beam | Channel difference  | Range min | Range max | Unit | Gamma |
 |-------------|---------------------|-----------|-----------|------|-------|
-| Red         | WV6.2 -- WV7.3      | -35       | +5        | K    | 1     |
-| Green       | IR3.9 -- IR10.8     | -5        | +60       | K    | 0.5   |
-| Blue        | NIR1.6 -- VIS0.6    | -75       | +25       | %    | 1     |
+| Red         | WV6.2 -- WV7.3      | -33.9     | +6.4      | K    | 1     |
+| Green       | IR3.9 -- IR10.8     | -5        | +70       | K    | 0.5   |
+| Blue        | NIR1.6 -- VIS0.6    | -70       | +20       | %    | 1     |
 
 ### MTG FCI Day Severe Storms RGB
 
