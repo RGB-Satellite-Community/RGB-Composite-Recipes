@@ -35,14 +35,14 @@ Alternative name: *Cloud Phase RGB*
 
 ### MTG FCI Day Cloud Phase RGB
 !!! info "Agreed upon at the online workshop 2026-05-13"
-    Proposed (M. Setvák, O. Nedělčev, 2026)
+    Proposed (M. Setvák, O. Nedělčev, I. Smijanic, 2026)
 
 
 | Colour beam | Channel (difference) | Range min | Range max | Unit | Gamma |
 |-------------|----------------------|-----------|-----------|------|-------|
 | Red         | NIR1.6               | 5         | 60        | %    | 1.0   |
-| Green       | NIR2.3               | 10        | 60        | %    | 1.66  |
-| Blue        | VIS0.6               | 0         | 100       | %    | 1.25  |
+| Green       | NIR2.3               | 0         | 60        | %    | 1.0   |
+| Blue        | VIS0.6               | 0         | 100       | %    | 1.1   |
 
 ### Himawari AHI Day Cloud Phase RGB
 
