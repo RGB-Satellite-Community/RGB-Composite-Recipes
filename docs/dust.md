@@ -49,9 +49,9 @@ Alternative name: *Dust RGB*
 
 | Colour beam | Channel (difference) | Range min | Range max | Unit | Gamma |
 |-------------|----------------------|-----------|-----------|------|-------|
-| Red         | IR12.0 -- IR10.8     | -3.5      | +1.0      | K    | 1.0   |
+| Red         | IR12.3 -- IR10.5     | -3.5      | +1.0      | K    | 1.0   |
 | Green       | IR10.5 -- IR8.7      | 1.0       | 12.0      | K    | 3.3   |
-| Blue        | IR10.8               | 260       | 295.0     | K    | 1.0   |
+| Blue        | IR10.5               | 260       | 295.0     | K    | 1.0   |
 
 ### GOES ABI Dust RGB
 
