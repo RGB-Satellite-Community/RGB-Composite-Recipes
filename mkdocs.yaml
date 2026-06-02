@@ -16,6 +16,10 @@ nav:
     - Day Severe Storms RGB: severe-convection.md
     - Overshooting Tops RGB: overshooting-tops.md
     - 24-hour Microphysics Dust RGB: dust.md
+    - 24-hour Microphysics Ash RGB: ash.md
+    - Volcanic Emissions (SO₂ and Ash) RGB: so2-ash.md
+    - True Colour RGB: true-colour.md
+    - Fire Temperature RGB: fire-temperature.md
     - Day Fire RGB: day-fire.md
     - Day Snowmelt RGB: day-snowmelt.md
   - RGBs Under Development:

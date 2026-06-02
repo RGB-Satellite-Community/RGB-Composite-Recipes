@@ -26,6 +26,10 @@ Welcome! This site documents community-maintained RGB composite recipes for mete
 | [Day Severe Storms RGB](severe-convection.md) | Convection monitoring, severe weather |
 | [Overshooting Tops RGB](overshooting-tops.md) | 24-hour monitoring of overshooting tops |
 | [24-hour Microphysics Dust RGB](dust.md) | Dust detection, moisture boundaries (day & night) |
+| [24-hour Microphysics Ash RGB](ash.md) | Volcanic ash and SO₂ plume detection (day & night) |
+| [Volcanic Emissions (SO₂ and Ash) RGB](so2-ash.md) | Volcanic SO₂ gas plume and ash detection |
+| [True Colour RGB](true-colour.md) | Aerosols, water bodies, clouds/snow, public outreach (day) |
+| [Fire Temperature RGB](fire-temperature.md) | Fire detection and qualitative fire intensity (day & night) |
 | [Day Fire RGB](day-fire.md) | Detection and monitoring of active fires |
 | [Day Snowmelt RGB](day-snowmelt.md) | Snow/ice surface characterization |
 
